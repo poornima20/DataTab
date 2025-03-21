@@ -4,3 +4,8 @@
   width: 100%;
   text-decoration-color: black;
 }
+
+.custom-bg {
+  background-color: white;
+  height: 100vh;
+}

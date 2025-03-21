@@ -1,0 +1,31 @@
+footer{
+    position: fixed;
+    padding: 20px;
+    bottom: 0;        
+    left: 0;          
+    width: 100%;    
+    justify-content: center;
+    margin-top: auto;
+    text-align: center;
+    background-color: #fafafa;
+    color: #9ca3af;
+}
+
+
+.icon-link img{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+.icon-link:hover img {
+    filter: none; 
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #9ca3af;
+    margin: 0;
+  }

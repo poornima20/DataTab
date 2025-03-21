@@ -9,7 +9,7 @@ export function Navbar() {
 
     return (
       <nav> 
-        <Link to="/" className="title">Website</Link>
+        <Link to="/" className="nav-title">DTab</Link>
         <div className="menu" onClick={() => {
             setMenuOpen(!menuOpen);
         }}>

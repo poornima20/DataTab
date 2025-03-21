@@ -16,7 +16,7 @@ nav{
     padding-top: 0.5rem; /* Optional: Adjust top padding for balance */
 }
 
-nav .title{
+nav .nav-title{
   font-size: 1.75rem;
   margin: 1rem;
   margin-left: 2.5rem; /* Moves the title slightly to the right */
@@ -69,6 +69,11 @@ nav .menu span{
 
 
 @media (max-width: 480px){
+
+    .nav-title{
+        font-size: 0.5rem;
+    }
+
     nav .menu{
         display: flex;
         margin-top: 0.5rem;

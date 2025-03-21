@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.table-container {
+  max-width: 650px;
+  margin: 50px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading */
+h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #111827; /* A dark gray for better readability */
+}
+
+/* Subtitle/Paragraph */
+p {
+  font-size: 14px;
+  color: #484848; /* Slightly softer than pure black */
+  margin-bottom: 20px;
+}
+
+/* Table Wrapper */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Thin bottom border under header row */
+table thead tr {
+  border-bottom: 1px solid #bebec0;
+}
+
+/* Subtle border for each table row */
+table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Table cells */
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Header styling */
+th {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;   /* Dark text color */
+    /* Slight letter spacing for clarity */
+}
+
+/* Body cells */
+td {
+  font-size: 13px;
+  color: #111827; /* Consistent dark color */
+  letter-spacing: 0.1px;
+}
+
+.number {
+  text-align: center;
+  width: 40px;
+  font-weight: 600;
+}
+
+/* Title column */
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3c3c;
+  transition: font-size 0.3s ease-in-out; /* Smooth, gradual change */
+}
+
+.title:hover{
+    font-size: 14.25px;
+    color: black;
+}
+
+/* Category (italic, subtle letter spacing) */
+.category {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.bookmark{
+    text-align: center;
+}
+.bookmark input[type='checkbox'] {
+    /* Remove the native checkbox appearance */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    /* Make room for the icon */
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  
+  /* The icon is displayed in the ::before pseudo-element */
+  .bookmark input[type='checkbox']::before {
+    /* The outlined bookmark icon */
+    content: 'bookmark_border';
+    font-family: 'Material Icons';
+    font-size: 24px;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    /* Smooth transition on hover/checked changes */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  /* When checked, switch to the filled bookmark icon */
+  .bookmark input[type='checkbox']:checked::before {
+    content: 'bookmark';
+  }
+  
+  /* Optional hover effect */
+  .bookmark input[type='checkbox']:hover::before {
+    color: #000000;
+    transform: scale(1.1);
+  }
+
+
+  .arrow {
+    display: inline-block; /* Ensures we can scale on hover */
+    width: 24px;           /* Adjust as needed */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Use a thick arrow-like symbol, such as ❯ or ▶ */
+  .arrow::before {
+    content: '❯';         /* Choose any thick arrow character you like */
+    font-size: 20px;       /* Increase for a thicker look */
+    line-height: 1;
+    color: #000;           /* Change color if needed */
+  }
+  
+  /* Enlarge on hover */
+  .arrow:hover {
+    transform: scale(1.2);
+  }
