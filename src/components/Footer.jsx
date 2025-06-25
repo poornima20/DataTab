@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 
-export function Footer(){
- 
-    return (
-   <footer className="footer">
-        <div className='footer-icons'>
+import instagramLogo from './icons/instagram-logo.svg';
+import githubLogo from './icons/github-logo.svg';
+import linkedinLogo from './icons/linkedln-logo.svg';
+
+export function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-icons">
         <a href="#" aria-label="Instagram" className="icon-link">
-          <img src="src\components\icons\instagram-logo.svg" alt="Instagram" />
+          <img src={instagramLogo} alt="Instagram" />
         </a>
         <a href="#" aria-label="GitHub" className="icon-link">
-          <img src="src\components\icons\github-logo.svg" alt="GitHub" />
+          <img src={githubLogo} alt="GitHub" />
         </a>
-        <a href="#" aria-label="Linkedin" className="icon-link">
-          <img src="src\components\icons\linkedln-logo.svg" alt="Linkedin" />
+        <a href="#" aria-label="LinkedIn" className="icon-link">
+          <img src={linkedinLogo} alt="LinkedIn" />
         </a>
-        </div>
-
-        <p className='footer-text'>
-        © 2025 Fullmoon, All rights reserved. 
-        </p>
-        
+      </div>
+      <p className="footer-text">
+        © 2025 Fullmoon, All rights reserved.
+      </p>
     </footer>
-    );
-
+  );
 }
