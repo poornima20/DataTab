@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
 
-import instagramLogo from './icons/instagram-logo.svg';
-import githubLogo from './icons/github-logo.svg';
-import linkedinLogo from './icons/linkedln-logo.svg';
+import instagramLogo from './components/icons/instagram-logo.svg';
+import githubLogo from './components/icons/github-logo.svg';
+import linkedinLogo from './components/icons/linkedln-logo.svg';
 
 export function Footer() {
   return (
