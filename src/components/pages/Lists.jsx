@@ -5,7 +5,7 @@ import './Lists.css';
 const defaultTableContents = [
   {bookmark: false, number: '1 .', title: 'To Do List', category: 'Productivity', page: "https://poornima20.github.io/DataTab-ToDoList/"},
   {bookmark: false, number: '2 .', title: 'BackTrack DSA', category: 'Study' , page: "https://datatab-backtrackdsa.onrender.com"},
-  {bookmark: false, number: '3 .', title: 'Personal Watchlist Table', category: 'Shows', page: "public/Projects/AI-Show-Recs/index.html"},
+  {bookmark: false, number: '3 .', title: 'Pomodoro Timer', category: 'Productivity', page: "https://poornima20.github.io/Pomodoro-DataTab/"},
 ];
 
 export function Lists() {
